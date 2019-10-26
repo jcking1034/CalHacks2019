@@ -1,7 +1,9 @@
 body {
   margin: auto;
   font-family: sans-serif;
-  font-size: 36px;
+  background: #111C49;
+  font-family: 'Assistant', sans-serif;
+  overflow-x:hidden;
 }
 
 div {
@@ -10,4 +12,100 @@ div {
   flex-direction: column;
 }
 
-/****/
+nav{
+  width: 100vw;
+  height: 80px;
+  background: #243166;
+  position: fixed;
+  display: flex;
+  z-index:1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+aside{
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/** Typography ************************/
+
+nav p a:first-child{
+  padding-right: 26px;
+}
+
+nav p a{
+  text-decoration:none;
+  color:#F7E8F3;
+  transition: width 0.5s, height 0.5s;
+}
+
+nav p a:hover{
+  font-weight:700;
+  transition: width 0.5s, height 0.5s;
+}
+
+nav p{
+  padding-right: 100px;
+}
+
+#searchbar{
+  display: flex;
+  align-items: center;
+  margin: 180px 0 120px 0;
+  padding: 10px 20px 10px 20px;
+  background: #243166;
+  width:360px;
+  height:40px;
+  border-radius:25px;
+}
+
+#output{
+  width:100vw;
+  background:#F7E8F3;
+  min-height: 60vh;
+}
+
+#save{
+  position: relative;
+  top:-80px;
+  right: -54vw;
+}
+
+/** Images ************************/
+
+#logo{
+  height: 40px;
+  padding-left: 100px;
+}
+
+#searchbar img{
+  width:20px;
+}
+
+.learns{
+  width: 30vw;
+  background:#F7E8F3;
+  width: 180px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#see img{
+  height: 40px;
+}
+
+#hear img{
+  width: 40px;
+}
+
+#physical img{
+  height: 60px;
+  width: 60px;
+}
