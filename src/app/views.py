@@ -15,9 +15,12 @@ def index():
 #         return render_template("about.html")
 
 # Example: http://127.0.0.1:5000/list?page=good
+
 @app.route('/list')
 def get_list():
-    page = request.args.get('page', default = "1", type = str)
+    page = request.args.get('page', None)
+    if not page:
+        return "No page given"
     return get_list_dict(page)
 
 def get_list_dict(page):
@@ -35,9 +38,15 @@ def get_list_dict(page):
 # Example: http://127.0.0.1:5000/list?page=good&name=abc&link=qqq
 @app.route('/add')
 def add_item():
-    page = request.args.get('page', default = "1", type = str)
-    name = request.args.get('name', default = "1", type = str)
-    link = request.args.get('link', default = "1", type = str)
+    page = request.args.get('page', None)
+    name = request.args.get('name', None)
+    link = request.args.get('link', None)
+    if not page:
+        return "No page given"
+    elif not name:
+        return "No name given"
+    elif not link:
+        return "No link given"
 
     new_item = pd.DataFrame({"page": [page], "name": [name], "link": [link]})
     
