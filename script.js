@@ -18,9 +18,11 @@ function display(items) {
 
     let a = items["names"];
     let b = items["links"];
+    let c = items["tags"];
 
     for (let i = 0; i < a.length; i++) {
-        // new React Component for a[0], b[0]
+     
+        // new React Component for a[0], b[0], c[0]
     }
 }
 
