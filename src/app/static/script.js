@@ -1,5 +1,4 @@
-/* Code to interface with backend */
-
+/* Code to interface with backend *****************************************************************************/
 function get_list(url, page, tag) {
     fetch(url + "?page=" + page + "&tag=" + tag)
     .then(res => res.json())
@@ -19,7 +18,7 @@ function add_item(url, page, tag, name, link) {
 }
 
 function display(items) {
-    /* Given json, create some React components and display them */
+    /* Given json, create some React components and display them **********************************************/
     console.log(JSON.stringify(myJson));
 
     let names = items["names"];
@@ -45,9 +44,49 @@ class ListItem extends React.Component {
     }
 }
 
-/* Code to select tag */
+/* Code to select tag *****************************************************************************************/
 
 let selectedTag = "visual"
 function setTag(tag) {
     selectedTag = tag;
+}
+
+/* Code to interface with backend *****************************************************************************/
+var uSearch;//Global Variable to detect user's input
+
+window.onload = function(){
+  changeStyle();
+  document.getElementById("uInput").onblur = function(evt){
+    uSearch = document.getElementById("uInput").value;
+    alert("User Says: "+uSearch); //uSearch now has the search value; can comment this out
+  }
+}
+
+function changeStyle(){
+  document.getElementById("see").onclick = function(evt){
+    document.getElementById("pSee").style = "display:visible";
+    document.getElementById("pHear").style = "display:none";
+    document.getElementById("pPhys").style = "display:none";
+    document.getElementById("see").style = "background:#F7E8F3";
+    document.getElementById("hear").style = "background:#111C49";
+    document.getElementById("physical").style = "background:#111C49";
+  }
+
+  document.getElementById("hear").onclick = function(evt){
+    document.getElementById("pSee").style = "display:none";
+    document.getElementById("pHear").style = "display:visible";
+    document.getElementById("pPhys").style = "display:none";
+    document.getElementById("see").style = "background:#111C49";
+    document.getElementById("hear").style = "background:#F7E8F3";
+    document.getElementById("physical").style = "background:#111C49";
+  }
+
+  document.getElementById("physical").onclick = function(evt){
+    document.getElementById("pSee").style = "display:none";
+    document.getElementById("pHear").style = "display:none";
+    document.getElementById("pPhys").style = "display:visible;";
+    document.getElementById("see").style = "background:#111C49";
+    document.getElementById("hear").style = "background:#111C49";
+    document.getElementById("physical").style = "background:#F7E8F3";
+  }
 }
