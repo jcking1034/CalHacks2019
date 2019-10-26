@@ -19,7 +19,7 @@
 <body>
   <div>
     <nav>
-      <a href="/"><img id="logo" src="images/logo.png" alt="logo"></a>
+      <a href="/"><img id="logo" src="/static/images/logo.png" alt="logo"></a>
       <p><a href="/support">Support</a><a href="/about">About</a></p>
     </nav>
 
