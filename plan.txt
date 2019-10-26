@@ -13,3 +13,15 @@ To run:
 1. cd src
 2. ./init_flask.sh
 3. Go to http://127.0.0.1:5000
+
+TODO:
+- Linking everything together
+- UI
+- Visual Updating
+- Visual Changes
+- Put stuff into database (data.csv)
+- Support/About page fix
+- Button to add links
+
+Nice to Have:
+- ?
