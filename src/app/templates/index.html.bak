@@ -5,14 +5,15 @@
   <meta charset="utf-8">
   <title>Sift Project</title>
 
-  <link href="/static/reset.css?q=1280549879" rel="stylesheet">
-  <link href="/static/stylesheet.css?q=1280549879" rel="stylesheet">
+  <link href="/static/reset.css?q=1280549899" rel="stylesheet">
+  <link href="/static/stylesheet.css?q=1280549899" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
 
   <!-- From https://reactjs.org/docs/add-react-to-a-website.html -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
 </head>
 
 <body>
@@ -29,17 +30,17 @@
     </section>
 
     <aside>
-      <section id="see" class="learns">
+      <section id="see" class="learns" onClick="setTag('visual')">
         <img src="/static/images/eye.png" alt="eye">
         <p>Visual</p>
       </section>
 
-      <section id="hear" class="learns">
+      <section id="hear" class="learns" onClick="setTag('auditory')">
         <img src="/static/images/ear.png" alt="ear">
         <p>Auditory</p>
       </section>
 
-      <section id="physical" class="learns">
+      <section id="physical" class="learns" onClick="setTag('physical')">
         <img src="/static/images/hand.png" alt="hand">
         <p>Physical</p>
       </section>
@@ -48,7 +49,7 @@
     <span id="output"></span>
 
   </div>
-  <script src="/static/script.js?q=1280549879" type = "text/babel"></script>
+  <script src="/static/script.js?q=1280549899" type = "text/babel"></script>
 </body>
 
 </html>

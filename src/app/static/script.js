@@ -47,7 +47,7 @@ class ListItem extends React.Component {
 
 /* Code to select tag */
 
-selectedTag = "visual"
+let selectedTag = "visual"
 function setTag(tag) {
     selectedTag = tag;
 }
