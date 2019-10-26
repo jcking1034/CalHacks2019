@@ -1,52 +1,45 @@
-#logo{
-  height: 40px;
-  padding-left: 100px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-#searchbar img{
-  width:20px;
-}
+<head>
+  <meta charset="utf-8">
+  <title>Sift Project</title>
+  <link href="reset.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
 
-.learns{
-  background:#F7E8F3;
-  width: 180px;
-  max-height:60px;
-  padding: 10px 20px 10px 20px;
-  border-radius: 25px 25px 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+<body>
+  <div>
+    <nav>
+      <a href="#"><img id="logo" src="images/logo.png" alt="logo"></a>
+      <p><a href="#">Support</a><a href="#">About</a></p>
+    </nav>
 
-#see{
-  color:#F23C3C;
-}
+    <section id="searchbar">
+      <img src="images/search.png" alt="search">
+      <span id="input"></span>
+      <img id="save" src="images/save.png" alt="">
+    </section>
 
-#hear{
-  color:#EFDB28;
-}
+    <aside>
+      <section id="see" class="learns">
+        <img src="images/eye.png" alt="eye">
+      </section>
 
-#physical{
-  color:#29CE97;
-}
+      <section id="hear" class="learns">
+        <img src="images/ear.png" alt="ear">
+      </section>
 
-#see, #hear, #physical{
-  padding-top: 20px;
-  z-index: 1;
-}
+      <section id="physical" class="learns">
+        <img src="images/hand.png" alt="hand">
+      </section>
+    </aside>
 
-#see img{
-  height: 40px;
-  padding: 20px;
-}
+    <span id="output"></span>
 
-#hear img{
-  width: 36px;
-  padding: 20px;
-}
+  </div>
+</body>
 
-#physical img{
-  width: 60px;
-  padding: 20px;
-}
+</html>
