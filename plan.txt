@@ -8,5 +8,8 @@ Our product is named Sift, which references the "sifting" of information. It is 
 
 Audience: Our audience are college students that don't learn well in traditional classroom lecture environments, or want to conduct further research on topics that accomodate to their particular learning styles. 
 
-Development:
 
+To run:
+1. cd src
+2. ./init_flask.sh
+3. Go to http://127.0.0.1:5000

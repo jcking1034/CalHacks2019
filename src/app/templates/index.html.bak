@@ -3,28 +3,48 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Assignment #</title>
-  <link href="/static/reset.css?q=1280549712" rel="stylesheet">
-  <link href="/static/stylesheet.css?q=1280549712" rel="stylesheet">
-  <script src="/static/script.js?q=1280549712"></script>
+  <title>Sift Project</title>
+
+  <link href="/static/reset.css?q=1280549713" rel="stylesheet">
+  <link href="/static/stylesheet.css?q=1280549713" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
+
+  <!-- From https://reactjs.org/docs/add-react-to-a-website.html -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="/static/script.js?q=1280549713"></script>
 </head>
 
 <body>
   <div>
-    <header>
-      <h1>Cal Hacks 2019</h1>
-    </header>
+    <nav>
+      <a href="/"><img id="logo" src="/static/images/logo.png" alt="logo"></a>
+      <p><a href="#">Support</a><a href="/about">About</a></p>
+    </nav>
 
-    <section>
-
+    <section id="searchbar">
+      <img src="/static/images/search.png" alt="search">
+      <span id="input"></span>
+      <img id="save" src="/static/images/save.png" alt="">
     </section>
 
-    <section>
+    <aside>
+      <section id="see" class="learns">
+        <img src="/static/images/eye.png" alt="eye">
+      </section>
 
-    </section>
+      <section id="hear" class="learns">
+        <img src="/static/images/ear.png" alt="ear">
+      </section>
 
-    <footer>
-    </footer>
+      <section id="physical" class="learns">
+        <img src="/static/images/hand.png" alt="hand">
+      </section>
+    </aside>
+
+    <span id="output"></span>
+
   </div>
 </body>
 
