@@ -1,11 +1,8 @@
 # TODO: Add support for tags (learning types)
-from flask import render_template
-from flask import request
-from flask import jsonify
+from flask import render_template, request, jsonify
+from app import app
 
 import pandas as pd
-
-from app import app
 
 
 @app.route('/')
