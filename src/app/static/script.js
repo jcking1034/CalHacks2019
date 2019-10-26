@@ -1,15 +1,19 @@
-function get_list(url, page) {
-    const response = await fetch(url + "?page=" + page);
-    const myJson = await response.json();
-
-    display(myJson)
+function get_list(url, page, tag) {
+    fetch(url + "?page=" + page + "&tag=" + tag)
+    .then(res => res.json())
+    .then((out) => {
+        display(out)
+    })
+    .catch(err => { throw err });
 }
 
-function add_item(url, page, name, link) {
-    const response = await fetch(url + "?page=" + page + "&name=" + name + "&link=" + link);
-    const myJson = await response.json();
-    
-    display(myJson)
+function add_item(url, page, tag, name, link) {
+    fetch(url + "?page=" + page + "&tag=" + tag + "&name=" + name + "&link=" + link)
+    .then(res => res.json())
+    .then((out) => {
+        display(out)
+    })
+    .catch(err => { throw err });
 }
 
 function display(items) {
