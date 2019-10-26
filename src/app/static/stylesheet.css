@@ -12,7 +12,7 @@ div {
   flex-direction: column;
 }
 
-nav {
+nav{
   width: 100vw;
   height: 80px;
   background: #243166;
@@ -83,7 +83,8 @@ input:focus{
 }
 
 #save{
-  position: absolute;
+  position: relative;
+  left: 60px;
 }
 
 /** Images ************************/
