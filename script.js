@@ -16,12 +16,12 @@ function display(items) {
     /* Given json, create some React components and display them */
     console.log(JSON.stringify(myJson));
 
-    let a = items["names"];
-    let b = items["links"];
-    let c = items["tags"];
+    let names = items["names"];
+    let links = items["links"];
+    let tags = items["tags"];
 
-    for (let i = 0; i < a.length; i++) {
-     
+    for (let i = 0; i < names.length; i++) {
+    ReactDOM.render(<ListItem name = names[i] links = links[i] tags = tags[i] />, document.getElementById('')); //fill in later
         // new React Component for a[0], b[0], c[0]
     }
 }
