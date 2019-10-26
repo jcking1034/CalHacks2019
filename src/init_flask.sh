@@ -1,6 +1,11 @@
 #!/bin/bash
 
 export FLASK_APP=run.py
-sed -i "bak" "s/1280549712/1280549711/g" "./templates/index.html"
-sed -i "bak" "s/1280549711/1280549712/g" "./templates/index.html"
+
+if [ $(cat app/templates/index.html | grep "1280549712" | wc -l) -eq 3 ]; then
+    sed -i ".bak" "s/1280549712/1280549711/g" "./app/templates/index.html"
+else
+    sed -i ".bak" "s/1280549711/1280549712/g" "./app/templates/index.html"
+fi
+
 flask run
