@@ -1,3 +1,5 @@
+/* Code to interface with backend */
+
 function get_list(url, page, tag) {
     fetch(url + "?page=" + page + "&tag=" + tag)
     .then(res => res.json())
@@ -41,4 +43,11 @@ class ListItem extends React.Component {
             </div>
         );
     }
+}
+
+/* Code to select tag */
+
+selectedTag = "visual"
+function setTag(tag) {
+    selectedTag = tag;
 }
