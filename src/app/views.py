@@ -39,9 +39,9 @@ def add_item():
     name = request.args.get('name', default = "1", type = str)
     link = request.args.get('link', default = "1", type = str)
 
-    data = pd.read_csv("./data.csv")
     new_item = pd.DataFrame({"page": [page], "name": [name], "link": [link]})
-    new_item.to_csv("NEW.csv")
+    
+    data = pd.read_csv("./data.csv")
     data = data.append(new_item)
     data = data.drop_duplicates(["page", "name", "link"])
     data = data.reset_index()
