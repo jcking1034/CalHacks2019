@@ -1,3 +1,4 @@
+# TODO: Add support for tags (learning types)
 from flask import render_template
 from flask import request
 from flask import jsonify
@@ -6,16 +7,17 @@ import pandas as pd
 
 from app import app
 
+
 @app.route('/')
 def index():
     return render_template("index.html")
 
-# @app.route('/about')
-# def about():
-#         return render_template("about.html")
+
+@app.route('/about')
+def about():
+        return render_template("about.html")
 
 # Example: http://127.0.0.1:5000/list?page=good
-
 @app.route('/list')
 def get_list():
     page = request.args.get('page', None)
@@ -23,17 +25,6 @@ def get_list():
         return "No page given"
     return get_list_dict(page)
 
-def get_list_dict(page):
-    """ This function needs to get the names and links for page """
-    data = pd.read_csv("./data.csv")
-    p = data[data['page'] == page]
-    names = list(p['name'])
-    links = list(p['link'])
-
-    return {
-        "names": names,
-        "links": links,
-        }
 
 # Example: http://127.0.0.1:5000/list?page=good&name=abc&link=qqq
 @app.route('/add')
@@ -59,3 +50,16 @@ def add_item():
     data.to_csv("./data.csv")
 
     return get_list_dict(page)
+
+
+def get_list_dict(page):
+    """ This function needs to get the names and links for page """
+    data = pd.read_csv("./data.csv")
+    p = data[data['page'] == page]
+    names = list(p['name'])
+    links = list(p['link'])
+
+    return {
+        "names": names,
+        "links": links,
+        }
