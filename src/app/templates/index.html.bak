@@ -19,27 +19,30 @@
 <body>
   <div>
     <nav>
-      <a href="/"><img id="logo" src="/static/images/logo.png" alt="logo"></a>
-      <p><a href="#">Support</a><a href="/about">About</a></p>
+      <a href="/"><img id="logo" src="images/logo.png" alt="logo"></a>
+      <p><a href="/support">Support</a><a href="/about">About</a></p>
     </nav>
 
     <section id="searchbar">
       <img src="/static/images/search.png" alt="search">
-      <span id="input"></span>
-      <img id="save" src="/static/images/save.png" alt="">
+      <input name="uInput" id="uInput" type="text">
+      <img id="save" src="/static/images/save.png" alt="save">
     </section>
 
     <aside>
       <section id="see" class="learns">
         <img src="/static/images/eye.png" alt="eye">
+        <p>Visual</p>
       </section>
 
       <section id="hear" class="learns">
         <img src="/static/images/ear.png" alt="ear">
+        <p>Auditory</p>
       </section>
 
       <section id="physical" class="learns">
         <img src="/static/images/hand.png" alt="hand">
+        <p>Physical</p>
       </section>
     </aside>
 
