@@ -21,7 +21,7 @@ function display(items) {
     let tags = items["tags"];
 
     for (let i = 0; i < names.length; i++) {
-    ReactDOM.render(<ListItem name = names[i] links = links[i] tags = tags[i] />, document.getElementById('')); //fill in later
+    ReactDOM.render(<ListItem name={names[i]} links={links[i]} tags={tags[i]} />, document.getElementById('')); //fill in later
         // new React Component for a[0], b[0], c[0]
     }
 }
