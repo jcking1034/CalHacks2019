@@ -56,11 +56,24 @@ nav p{
   display: flex;
   align-items: center;
   margin: 180px 0 120px 0;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 20px 5px 20px;
   background: #243166;
   width:360px;
   height:40px;
   border-radius:25px;
+}
+
+input{
+  width: 500px;
+  margin-left: 20px;
+  border: none;
+  background: #243166;
+  padding: 10px 10px 10px 0;
+  color:#F7E8F3;
+}
+
+input:focus{
+  outline: none;
 }
 
 #output{
@@ -70,9 +83,7 @@ nav p{
 }
 
 #save{
-  position: relative;
-  top:-80px;
-  right: -54vw;
+  position: absolute;
 }
 
 /** Images ************************/
@@ -87,25 +98,45 @@ nav p{
 }
 
 .learns{
-  width: 30vw;
   background:#F7E8F3;
   width: 180px;
+  max-height:60px;
   padding: 10px 20px 10px 20px;
   border-radius: 25px 25px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+#see{
+  color:#F23C3C;
+}
+
+#hear{
+  color:#EFDB28;
+}
+
+#physical{
+  color:#29CE97;
+}
+
+#see, #hear, #physical{
+  padding-top: 20px;
+  z-index: 1;
 }
 
 #see img{
   height: 40px;
+  padding: 20px;
 }
 
 #hear img{
-  width: 40px;
+  width: 36px;
+  padding: 20px;
 }
 
 #physical img{
-  height: 60px;
   width: 60px;
+  padding: 20px;
 }
