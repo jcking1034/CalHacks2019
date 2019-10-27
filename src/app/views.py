@@ -9,10 +9,14 @@ import pandas as pd
 def index():
     return render_template('index.html')
 
+@app.route('/support')
+def support():
+    return render_template('support.html')
+
 
 @app.route('/about')
 def about():
-        return render_template('about.html')
+    return render_template('about.html')
 
 
 # Example: http://127.0.0.1:5000/list?page=good&tag=visual
