@@ -5,7 +5,6 @@ window.onload = function(){
   changeStyle();
   document.getElementById("uInput").onblur = function(evt){
     uSearch = document.getElementById("uInput").value;
-    // alert("User Says: " + uSearch); 
     get_list("http://127.0.0.1:5000/", uSearch, curTab);
   }
 }
@@ -22,6 +21,7 @@ function changeStyle(){
     document.getElementById("hear").style = "background:#111C49; transition:all 0.3s;";
     document.getElementById("physical").style = "background:#111C49; transition:all 0.3s;";
     curTab = "visual";
+    get_list("http://127.0.0.1:5000/", uSearch, curTab);
   }
 
   document.getElementById("hear").onclick = function(evt){
@@ -32,6 +32,7 @@ function changeStyle(){
     document.getElementById("hear").style = "background:#F7E8F3; transition:all 0.3s;";
     document.getElementById("physical").style = "background:#111C49; transition:all 0.3s;";
     curTab = "auditory";
+    get_list("http://127.0.0.1:5000/", uSearch, curTab);
   }
 
   document.getElementById("physical").onclick = function(evt){
@@ -42,6 +43,7 @@ function changeStyle(){
     document.getElementById("hear").style = "background:#111C49; transition:all 0.3s;";
     document.getElementById("physical").style = "background:#F7E8F3; transition:all 0.3s;";
     curTab = "physical";
+    get_list("http://127.0.0.1:5000/", uSearch, curTab);
   }
 }
 
@@ -54,18 +56,9 @@ function get_list(url, page, tag) {
   .catch(err => { console.log(err) });
 }
 
-// NOT IMPLEMENTED
-// function add_item(url, page, tag, name, link) {
-//   fetch(url + "?page=" + page + "&tag=" + tag + "&name=" + name + "&link=" + link)
-//   .then(res => res.json())
-//   .then((out) => {
-//       display(out)
-//   })
-//   .catch(err => { throw err });
-// }
 
 function display(items) {
-  /* Given json, create some React components and display them **********************************************/
+  /* Given json, create some React components and display them */
 
   let names = items["names"];
   let links = items["links"];
@@ -94,14 +87,3 @@ function display(items) {
     element.appendChild(to_add);
   }
 }
-
-// class ListItem extends React.Component {
-//   render() {
-//   return (
-//           <div>
-//               <div>props.name</div>
-//               <div>props.link</div>
-//           </div>
-//       );
-//   }
-// }
