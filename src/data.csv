@@ -1,31 +1,31 @@
-,page,tag,name,link
-0,biology,visual,MIT Blossoms,https://blossoms.mit.edu/resources/biology_resources
-1,biology,visual,What is Biology?,https://www.livescience.com/44549-what-is-biology.html
-2,biology,auditory,Biology TED Talks,https://www.ted.com/topics/biology
-3,biology,physical,Anatomy Quiz,https://practiceanatomy.com
-4,biology,physical,Biology Quizlet,https://quizlet.com/9285993/biology-exam-study-guide-flash-cards/
-5,geology,visual,Environmental Diagrams,http://albertwu.org/cs61a/notes/environments.html
-6,geology,auditory,Environment TED Talks,https://www.ted.com/talks?topics%5B%5D=environment
-7,geology,physical,The Geology Game,https://store.steampowered.com/app/802920/The_geology_Game/
-8,geology,visual,The Rock Cycle,https://www.geolsoc.org.uk/ks3/gsl/education/resources/rockcycle/page3445.html
-9,physics,visual,Physics Simulations (University of Colorado),https://phet.colorado.edu/en/simulations/category/physics
-10,physics,physical,Interactive Simple Harmonic Motion,https://www.edumedia-sciences.com/en/media/612-shm
-11,physics,physical,Physics TED Talks,https://www.ted.com/talks?topics%5B%5D=physics
-12,physics,physical,Universe & More,http://www.theuniverseandmore.com
-13,physics,visual,Television Shows for Physicists,https://www.thoughtco.com/television-shows-for-physicists-2699221
-14,physics,auditory,Physics Frontier Podcast,https://physicsfrontiers-rantschler.podomatic.com
-15,physics,visual,Frontiers of Physics,https://link.springer.com/journal/11467
-16,biology,auditory,Podcasts for Biologists,https://thebiologist.rsb.org.uk/biologist-features/158-biologist/features/1803-12-of-the-best-podcasts-for-biologists
-17,geology,physical,Model Volcano,https://www.wikihow.com/Make-a-Volcano
-18,chemistry,visual,Crystal Structures,https://courses.lumenlearning.com/cheminter/chapter/crystal-structures-of-/
-19,geology,visual,Rock Classifications,https://flexiblelearning.auckland.ac.nz/rocks_minerals/rocks/index.html
-20,geology,visual,Climate Change,https://climate.nasa.gov/evidence/
-21,biology,visual,Blue Whales,https://climate.nasa.gov/evidence/
-22,geology,visual,Picture Guide to Common Minerals,https://www.thoughtco.com/geology-4133564
-23,geology,auditory,Citiess of the Future Podcast,https://climateone.org/audio/cities-future
-24,chemistry,physical,Drawing Organic Molecules,https://www.chemguide.co.uk/basicorg/conventions/draw.html
-25,physics,physical,Kerbal Space Program,https://www.kerbalspaceprogram.com
-26,physics,visual,Physics in Cartoons,https://entertainment.howstuffworks.com/10-cartoon-moments-physics.htm
-27,physics,visual,Movie Physics,http://www.intuitor.com/moviephysics/
-28,physics,auditory,Physics Audio Courses,http://www.infocobuild.com/education/audio-video-courses/physics/physics.html
-29,physics,auditory,Songs for Teaching Physics,https://www.songsforteaching.com/physicssongs/
+,page,tag,name,link,popularity
+0,biology,visual,MIT Blossoms,https://blossoms.mit.edu/resources/biology_resources,2
+1,biology,visual,What is Biology?,https://www.livescience.com/44549-what-is-biology.html,6
+2,biology,auditory,Biology TED Talks,https://www.ted.com/topics/biology,5
+3,biology,physical,Anatomy Quiz,https://practiceanatomy.com,32
+4,biology,physical,Biology Quizlet,https://quizlet.com/9285993/biology-exam-study-guide-flash-cards/,8
+5,geology,visual,Environmental Diagrams,http://albertwu.org/cs61a/notes/environments.html,5
+6,geology,auditory,Environment TED Talks,https://www.ted.com/talks?topics%5B%5D=environment,3
+7,geology,physical,The Geology Game,https://store.steampowered.com/app/802920/The_geology_Game/,9
+8,geology,visual,The Rock Cycle,https://www.geolsoc.org.uk/ks3/gsl/education/resources/rockcycle/page3445.html,14
+9,physics,visual,Physics Simulations (University of Colorado),https://phet.colorado.edu/en/simulations/category/physics,13
+10,physics,physical,Interactive Simple Harmonic Motion,https://www.edumedia-sciences.com/en/media/612-shm,42
+11,physics,physical,Physics TED Talks,https://www.ted.com/talks?topics%5B%5D=physics,12
+12,physics,physical,Universe & More,http://www.theuniverseandmore.com,6
+13,physics,visual,Television Shows for Physicists,https://www.thoughtco.com/television-shows-for-physicists-2699221,13
+14,physics,auditory,Physics Frontier Podcast,https://physicsfrontiers-rantschler.podomatic.com,23
+15,physics,visual,Frontiers of Physics,https://link.springer.com/journal/11467,5
+16,biology,auditory,Podcasts for Biologists,https://thebiologist.rsb.org.uk/biologist-features/158-biologist/features/1803-12-of-the-best-podcasts-for-biologists,8
+17,geology,physical,Model Volcano,https://www.wikihow.com/Make-a-Volcano,1
+18,chemistry,visual,Crystal Structures,https://courses.lumenlearning.com/cheminter/chapter/crystal-structures-of-/,18
+19,geology,visual,Rock Classifications,https://flexiblelearning.auckland.ac.nz/rocks_minerals/rocks/index.html,19
+20,geology,visual,Climate Change,https://climate.nasa.gov/evidence/,14
+21,biology,visual,Blue Whales,https://climate.nasa.gov/evidence/,32
+22,geology,visual,Picture Guide to Common Minerals,https://www.thoughtco.com/geology-4133564,14
+23,geology,auditory,Citiess of the Future Podcast,https://climateone.org/audio/cities-future,56
+24,chemistry,physical,Drawing Organic Molecules,https://www.chemguide.co.uk/basicorg/conventions/draw.html,8
+25,physics,physical,Kerbal Space Program,https://www.kerbalspaceprogram.com,16
+26,physics,visual,Physics in Cartoons,https://entertainment.howstuffworks.com/10-cartoon-moments-physics.htm,2
+27,physics,visual,Movie Physics,http://www.intuitor.com/moviephysics/,8
+28,physics,auditory,Physics Audio Courses,http://www.infocobuild.com/education/audio-video-courses/physics/physics.html,11
+29,physics,auditory,Songs for Teaching Physics,https://www.songsforteaching.com/physicssongs/,1

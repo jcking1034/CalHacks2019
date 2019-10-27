@@ -89,6 +89,11 @@ function display(items) {
     a.appendChild(linkText);
     a.title = names[i];
     a.href = links[i];
+    a.onclick = function() {
+      fetch("http://127.0.0.1:5000/update?name=" + names[i])
+      .then(f => f.json())
+      .catch(err => { console.log(err) });
+    }
     to_add.appendChild(a);
     
     element.appendChild(to_add);
