@@ -9,47 +9,47 @@
   <link href="/static/stylesheet.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap" rel="stylesheet">
 
-  <script src="/static/script.js"></script>
+  <script src="/static/script.js?q=1280549963"></script>
   <!-- From https://reactjs.org/docs/add-react-to-a-website.html -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
 </head>
 
 <body>
   <div>
     <nav>
-      <a href="/"><img id="logo" src="images/logo.png" alt="logo"></a>
+      <a href="/"><img id="logo" src="/static/images/logo.png" alt="logo"></a>
       <p><a href="/support">Support</a><a href="/about">About</a></p>
     </nav>
-
+    
     <section id="searchbar">
       <img src="/static/images/search.png" alt="search">
       <input name="uInput" id="uInput" type="text">
-      <img id="save" src="images/save.png" alt="save">
+      <img id="save" src="/static/images/save.png" alt="save">
     </section>
-
+    
     <aside>
       <section id="see" class="learns">
         <img id="iSee" src="/static/images/eye.png" alt="eye">
         <p id="pSee">Visual</p>
       </section>
-
+      
       <section id="hear" class="learns" style="background:#111C49">
-        <img id="iHear" src="/static/images/ear.png" alt="ear">
-        <p id="pHear" style="display:none;">Auditory</p>
-      </section>
-
-      <section id="physical" class="learns"  style="background:#111C49">
-        <img id="iPhys" src="/static/images/hand.png" alt="hand">
-        <p id="pPhys" style="display:none">Physical</p>
-      </section>
-    </aside>
-
-    <span id="output"></span>
-    <script src="/static/script.js?q=1280549899" type = "text/babel"></script>
-  </div>
-</body>
-
-</html>
+          <img id="iHear" src="/static/images/ear.png" alt="ear">
+          <p id="pHear" style="display:none;">Auditory</p>
+        </section>
+        
+        <section id="physical" class="learns"  style="background:#111C49">
+            <img id="iPhys" src="/static/images/hand.png" alt="hand">
+            <p id="pPhys" style="display:none">Physical</p>
+          </section>
+        </aside>
+        
+        <span id="output"></span>
+        
+      </div>
+    </body>
+    
+    </html>
+    

@@ -1,92 +1,93 @@
-/* Code to interface with backend *****************************************************************************/
-function get_list(url, page, tag) {
-    fetch(url + "?page=" + page + "&tag=" + tag)
-    .then(res => res.json())
-    .then((out) => {
-        display(out)
-    })
-    .catch(err => { throw err });
-}
-
-function add_item(url, page, tag, name, link) {
-    fetch(url + "?page=" + page + "&tag=" + tag + "&name=" + name + "&link=" + link)
-    .then(res => res.json())
-    .then((out) => {
-        display(out)
-    })
-    .catch(err => { throw err });
-}
-
-function display(items) {
-    /* Given json, create some React components and display them **********************************************/
-    console.log(JSON.stringify(myJson));
-
-    let names = items["names"];
-    let links = items["links"];
-    let tags = items["tags"];
-
-    for (let i = 0; i < names.length; i++) {
-        ReactDOM.render(
-            <ListItem name={names[i]} links={links[i]} tags={tags[i]} />, 
-            document.getElementById('output')
-        );
-    }
-}
-
-class ListItem extends React.Component {
-    render() {
-    return (
-            <div>
-                <div>props.name</div>
-                <div>props.link</div>
-            </div>
-        );
-    }
-}
-
-/* Code to select tag *****************************************************************************************/
-
-let selectedTag = "visual"
-function setTag(tag) {
-    selectedTag = tag;
-}
-
-/* Code to interface with backend *****************************************************************************/
-var uSearch;//Global Variable to detect user's input
+/* Code to get search bar text */
+var uSearch;  //uSearch now has the search value
 
 window.onload = function(){
   changeStyle();
   document.getElementById("uInput").onblur = function(evt){
     uSearch = document.getElementById("uInput").value;
-    alert("User Says: "+uSearch); //uSearch now has the search value; can comment this out
+    // alert("User Says: " + uSearch); 
+    get_list("http://127.0.0.1:5000/", uSearch, curTab);
   }
 }
+
+/* Code to change tabs */
+var curTab = "visual";  // Stores the current tab
 
 function changeStyle(){
   document.getElementById("see").onclick = function(evt){
-    document.getElementById("pSee").style = "display:visible";
-    document.getElementById("pHear").style = "display:none";
-    document.getElementById("pPhys").style = "display:none";
-    document.getElementById("see").style = "background:#F7E8F3";
-    document.getElementById("hear").style = "background:#111C49";
-    document.getElementById("physical").style = "background:#111C49";
+    document.getElementById("pSee").style = "display:visible; transition:all 0.3s;";
+    document.getElementById("pHear").style = "display:none; transition:all 0.3s;";
+    document.getElementById("pPhys").style = "display:none; transition:all 0.3s;";
+    document.getElementById("see").style = "background:#F7E8F3; transition:all 0.3s;";
+    document.getElementById("hear").style = "background:#111C49; transition:all 0.3s;";
+    document.getElementById("physical").style = "background:#111C49; transition:all 0.3s;";
+    curTab = "visual";
   }
 
   document.getElementById("hear").onclick = function(evt){
-    document.getElementById("pSee").style = "display:none";
-    document.getElementById("pHear").style = "display:visible";
-    document.getElementById("pPhys").style = "display:none";
-    document.getElementById("see").style = "background:#111C49";
-    document.getElementById("hear").style = "background:#F7E8F3";
-    document.getElementById("physical").style = "background:#111C49";
+    document.getElementById("pSee").style = "display:none; transition:all 0.3s;";
+    document.getElementById("pHear").style = "display:visible; transition:all 0.3s;";
+    document.getElementById("pPhys").style = "display:none; transition:all 0.3s;";
+    document.getElementById("see").style = "background:#111C49; transition:all 0.3s;";
+    document.getElementById("hear").style = "background:#F7E8F3; transition:all 0.3s;";
+    document.getElementById("physical").style = "background:#111C49; transition:all 0.3s;";
+    curTab = "auditory";
   }
 
   document.getElementById("physical").onclick = function(evt){
-    document.getElementById("pSee").style = "display:none";
-    document.getElementById("pHear").style = "display:none";
-    document.getElementById("pPhys").style = "display:visible;";
-    document.getElementById("see").style = "background:#111C49";
-    document.getElementById("hear").style = "background:#111C49";
-    document.getElementById("physical").style = "background:#F7E8F3";
+    document.getElementById("pSee").style = "display:none; transition:all 0.3s;";
+    document.getElementById("pHear").style = "display:none; transition:all 0.3s;";
+    document.getElementById("pPhys").style = "display:visible;; transition:all 0.3s;";
+    document.getElementById("see").style = "background:#111C49; transition:all 0.3s;";
+    document.getElementById("hear").style = "background:#111C49; transition:all 0.3s;";
+    document.getElementById("physical").style = "background:#F7E8F3; transition:all 0.3s;";
+    curTab = "physical";
   }
 }
+
+/* Code to interface with backend */
+function get_list(url, page, tag) {
+  console.log(url + 'list?page=' + page + '&tag=' + tag);
+  fetch(url + 'list?page=' + page + '&tag=' + tag)
+  .then(f => f.json())
+  .then(data => display(data))
+  .catch(err => { console.log(err) });
+}
+
+// NOT IMPLEMENTED
+// function add_item(url, page, tag, name, link) {
+//   fetch(url + "?page=" + page + "&tag=" + tag + "&name=" + name + "&link=" + link)
+//   .then(res => res.json())
+//   .then((out) => {
+//       display(out)
+//   })
+//   .catch(err => { throw err });
+// }
+
+function display(items) {
+  /* Given json, create some React components and display them **********************************************/
+
+  let names = items["names"];
+  let links = items["links"];
+
+  console.log(names);
+  console.log(links);
+
+  // for (let i = 0; i < names.length; i++) {
+  //     ReactDOM.render(
+  //         <ListItem name={names[i]} links={links[i]} tags={tags[i]} />, 
+  //         document.getElementById('output')
+  //     );
+  // }
+}
+
+// class ListItem extends React.Component {
+//   render() {
+//   return (
+//           <div>
+//               <div>props.name</div>
+//               <div>props.link</div>
+//           </div>
+//       );
+//   }
+// }

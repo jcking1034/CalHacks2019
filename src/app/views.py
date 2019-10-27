@@ -65,5 +65,5 @@ def get_list_dict(page, tag):
 
     return {
         'names': names,
-        'links': links
+        'links': links,
         }

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>About Sift</title>
+  <link rel="icon" href="/static/images/hand.png">
   <link href="/static/reset.css?q=1280549713" rel="stylesheet">
   <link href="/static/stylesheet.css?q=1280549713" rel="stylesheet">
   <script src="/static/script.js?q=1280549713"></script>
