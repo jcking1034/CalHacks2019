@@ -4,6 +4,7 @@ body {
   background: #111C49;
   font-family: 'Assistant', sans-serif;
   overflow-x:hidden;
+  color:#F7E8F3;
 }
 
 div {
@@ -33,34 +34,67 @@ aside{
 
 /** Typography ************************/
 
-nav p a:first-child{
-  padding-right: 26px;
+#about h1, #bookmarks h1{
+  width:100%;
+  text-align: center;
+  align-self: center;
+  max-width: 800px;
+  padding:140px 0 0 0 ;
+  font-size: 2em;
+  color: #F7E8F3;
+  padding-bottom: 20px;
 }
 
-nav p a{
+#about p, #bookmarks p{
+  align-self: center;
+  max-width: 800px;
+  padding:10px;
+  color: #F7E8F3;
+  padding-bottom: 20px;
+}
+
+nav section a{
   text-decoration:none;
   color:#F7E8F3;
   transition: width 0.5s, height 0.5s;
 }
 
-nav p a:hover{
+nav section a:hover{
   font-weight:700;
   transition: width 0.5s, height 0.5s;
 }
 
-nav p{
+nav section{
   padding-right: 100px;
+  width: 100px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #searchbar{
   display: flex;
   align-items: center;
   margin: 180px 0 120px 0;
-  padding: 5px 20px 5px 20px;
+  padding: 0 0 0 20px;
   background: #243166;
   width:360px;
   height:40px;
   border-radius:25px;
+}
+
+#searchbar p{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: inherit;
+  padding-right:5px;
+  width:200px;
+  background:#F7E8F3;
+  color: #243166;
+  font-weight: 700;
+  border-radius: 0 25px 25px 0;
 }
 
 input{
@@ -83,8 +117,7 @@ input:focus{
 }
 
 #save{
-  position: relative;
-  left: 60px;
+  height: 36px;
 }
 
 /** Images ************************/
@@ -127,20 +160,29 @@ input:focus{
   z-index: 1;
 }
 
-#see img{
+#see img, .see{
   height: 40px;
   padding: 20px;
 }
 
-#hear img{
+#hear img, .hear{
   width: 36px;
   padding: 20px;
 }
 
-#physical img{
+#physical img, .phys{
   width: 60px;
   padding: 20px;
 }
+
+.trio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 500px;
+}
+
 
 .listItem {
   width: 30%;

@@ -19,6 +19,11 @@ def about():
     return render_template('about.html')
 
 
+@app.route('/bookmarks')
+def bookmarks():
+    return render_template('bookmarks.html')
+
+
 # Example: http://127.0.0.1:5000/list?page=good&tag=visual
 @app.route('/list')
 def get_list():
@@ -47,7 +52,12 @@ def add_item():
     elif not link:
         return 'No link given'
 
-    new_item = pd.DataFrame({'page': [page], 'tag': [tag], 'name': [name], 'link': [link]})
+    new_item = pd.DataFrame({
+        'page': [page.lower()], 
+        'tag': [tag.lower()], 
+        'name': [name.lower()], 
+        'link': [link.lower()]
+        })
     
     data = pd.read_csv('./data.csv')
     data = data.append(new_item)
@@ -63,7 +73,7 @@ def add_item():
 def get_list_dict(page, tag):
     ''' This function needs to get the names and links for page '''
     data = pd.read_csv('./data.csv')
-    p = data[(data['page'] == page) & (data['tag'] == tag)]
+    p = data[(data['page'] == page.lower()) & (data['tag'] == tag)]
     names = list(p['name'])
     links = list(p['link'])
 

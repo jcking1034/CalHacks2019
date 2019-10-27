@@ -1,9 +1,17 @@
+window.onload = function(){
+  document.getElementById("save").onmouseover = function(evt){
+    document.getElementById("save").src = "/static/images/save2.png";
+  }
+  document.getElementById("save").onmouseout = function(evt){
+    document.getElementById("save").src = "/static/images/save.png";
+  }
+}
+
 /* Code to get search bar text */
 var uSearch;  // uSearch now has the search value
 
-window.onload = function(){
-  changeStyle();
-  document.getElementById("uInput").onblur = function(evt){
+function startSearch(){
+  document.getElementById("search").onclick = function(evt){
     uSearch = document.getElementById("uInput").value;
     get_list("http://127.0.0.1:5000/", uSearch, curTab);
   }
