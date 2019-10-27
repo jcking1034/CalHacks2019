@@ -75,6 +75,7 @@ function display(items) {
   // Add the goods
   for (let i = 0; i < names.length; i++) {
     var to_add = document.createElement("div");
+    to_add.classList.add("listItem");
 
     var a = document.createElement('a');
     var linkText = document.createTextNode(names[i]);

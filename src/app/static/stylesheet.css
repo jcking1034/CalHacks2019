@@ -141,3 +141,32 @@ input:focus{
   width: 60px;
   padding: 20px;
 }
+
+.listItem {
+  width: 30%;
+  margin: 10%;
+  padding: 5%;
+  border-radius: 1em;
+  border-bottom: 5px solid gray;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.listItem a {
+  text-decoration: none;
+  font-family: 'Assistant', sans-serif;
+  font-size: 2em;
+  color: gray;
+}
+
+.listItem a:visited {
+  text-decoration: none;
+  font-family: 'Assistant', sans-serif;
+  font-size: 2em;
+  color: gray;
+}
+
+.listItem a:hover {
+  text-decoration: none;
+  color: black;
+}
