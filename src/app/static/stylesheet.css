@@ -7,6 +7,11 @@ body {
   color:#F7E8F3;
 }
 
+::selection{
+  color:#F7E8F3;
+  background: #243166;
+}
+
 div {
   display: flex;
   align-items: center;
@@ -111,9 +116,13 @@ input:focus{
 }
 
 #output{
-  width:100vw;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background:#F7E8F3;
   min-height: 60vh;
+  padding-top: 20px;
 }
 
 #save{
@@ -185,30 +194,35 @@ input:focus{
 
 
 .listItem {
-  width: 30%;
-  margin: 10%;
-  padding: 5%;
-  border-radius: 1em;
-  border-bottom: 5px solid gray;
+  display: flex;
+  width: 160px;
+  height: 160px;
+
+  margin: 10px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 5px solid gray;
   text-align: center;
-  margin: 0 auto;
+  background: #243166;
+
+  /* display:flex;
+  flex-direction: row;
+  align-self:center;
+  width: 360px;
+  height: 360px;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius:25px;
+  align-items: center; */
 }
 
 .listItem a {
   text-decoration: none;
-  font-family: 'Assistant', sans-serif;
   font-size: 2em;
-  color: gray;
-}
-
-.listItem a:visited {
-  text-decoration: none;
-  font-family: 'Assistant', sans-serif;
-  font-size: 2em;
-  color: gray;
+  color: #f7e8f3;
 }
 
 .listItem a:hover {
-  text-decoration: none;
   color: black;
+  font-weight: 700;
 }
