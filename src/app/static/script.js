@@ -73,12 +73,26 @@ function display(items) {
   console.log(names);
   console.log(links);
 
-  // for (let i = 0; i < names.length; i++) {
-  //     ReactDOM.render(
-  //         <ListItem name={names[i]} links={links[i]} tags={tags[i]} />, 
-  //         document.getElementById('output')
-  //     );
-  // }
+  // Delete everything inside lol
+  var element = document.getElementById("output");
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+  }
+
+  // Add the goods
+  for (let i = 0; i < names.length; i++) {
+
+    var to_add = document.createElement("div");
+
+    var a = document.createElement('a');
+    var linkText = document.createTextNode(names[i]);
+    a.appendChild(linkText);
+    a.title = names[i];
+    a.href = links[i];
+    to_add.appendChild(a);
+    
+    element.appendChild(to_add);
+  }
 }
 
 // class ListItem extends React.Component {
