@@ -1,19 +1,19 @@
 ,page,tag,name,link
-0,Biology,visual,MIT Blossoms,https://blossoms.mit.edu/resources/biology_resources
-1,Biology,visual,What is Biology?,https://www.livescience.com/44549-what-is-biology.html
-2,Biology,auditory,Biology TED Talks,https://www.ted.com/topics/biology
-3,Biology,physical,Anatomy Quiz,https://practiceanatomy.com
-4,Biology,physical,Biology Quizlet,https://quizlet.com/9285993/biology-exam-study-guide-flash-cards/
-5,Geology,visual,Environmental Diagrams,http://albertwu.org/cs61a/notes/environments.html
-6,Geology,auditory,Environment TED Talks,https://www.ted.com/talks?topics%5B%5D=environment
-7,Geology,physical,The Geology Game,https://store.steampowered.com/app/802920/The_Geology_Game/
-8,Geology,visual,The Rock Cycle,https://www.geolsoc.org.uk/ks3/gsl/education/resources/rockcycle/page3445.html
-9,Physics,visual,Physics Simulations (University of Colorado),https://phet.colorado.edu/en/simulations/category/physics
-10,Physics,physical,Interactive Simple Harmonic Motion,https://www.edumedia-sciences.com/en/media/612-shm
-11,Physics,physical,Physics TED Talks,https://www.ted.com/talks?topics%5B%5D=physics
-12,Physics,physical,Universe & More,http://www.theuniverseandmore.com
-13,Physics,visual,Television Shows for Physicists,https://www.thoughtco.com/television-shows-for-physicists-2699221
-14,Physics,auditory,Physics Frontier Podcast,https://physicsfrontiers-rantschler.podomatic.com
-15,Physics,visual,Frontiers of Physics,https://link.springer.com/journal/11467
-16,Biology,auditory,Podcasts for Biologists,https://thebiologist.rsb.org.uk/biologist-features/158-biologist/features/1803-12-of-the-best-podcasts-for-biologists
-17,Geology,physical,Model Volcano,https://www.wikihow.com/Make-a-Volcano
+0,biology,visual,MIT Blossoms,https://blossoms.mit.edu/resources/biology_resources
+1,biology,visual,What is biology?,https://www.livescience.com/44549-what-is-biology.html
+2,biology,auditory,biology TED Talks,https://www.ted.com/topics/biology
+3,biology,physical,Anatomy Quiz,https://practiceanatomy.com
+4,biology,physical,biology Quizlet,https://quizlet.com/9285993/biology-exam-study-guide-flash-cards/
+5,geology,visual,Environmental Diagrams,http://albertwu.org/cs61a/notes/environments.html
+6,geology,auditory,Environment TED Talks,https://www.ted.com/talks?topics%5B%5D=environment
+7,geology,physical,The Geology Game,https://store.steampowered.com/app/802920/The_geology_Game/
+8,geology,visual,The Rock Cycle,https://www.geolsoc.org.uk/ks3/gsl/education/resources/rockcycle/page3445.html
+9,physics,visual,Physics Simulations (University of Colorado),https://phet.colorado.edu/en/simulations/category/physics
+10,physics,physical,Interactive Simple Harmonic Motion,https://www.edumedia-sciences.com/en/media/612-shm
+11,physics,physical,Physics TED Talks,https://www.ted.com/talks?topics%5B%5D=physics
+12,physics,physical,Universe & More,http://www.theuniverseandmore.com
+13,physics,visual,Television Shows for Physicists,https://www.thoughtco.com/television-shows-for-physicists-2699221
+14,physics,auditory,Physics Frontier Podcast,https://physicsfrontiers-rantschler.podomatic.com
+15,physics,visual,Frontiers of Physics,https://link.springer.com/journal/11467
+16,biology,auditory,Podcasts for Biologists,https://thebiologist.rsb.org.uk/biologist-features/158-biologist/features/1803-12-of-the-best-podcasts-for-biologists
+17,geology,physical,Model Volcano,https://www.wikihow.com/Make-a-Volcano
