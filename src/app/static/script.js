@@ -1,3 +1,4 @@
+/* Code to have bookmark button react to mouse */
 window.onload = function(){
   document.getElementById("save").onmouseover = function(evt){
     document.getElementById("save").src = "/static/images/save2.png";
@@ -9,7 +10,6 @@ window.onload = function(){
 
 /* Code to get search bar text */
 var uSearch;  // uSearch now has the search value
-
 function startSearch(){
   document.getElementById("search").onclick = function(evt){
     uSearch = document.getElementById("uInput").value;
@@ -19,7 +19,6 @@ function startSearch(){
 
 /* Code to change tabs */
 var curTab = "visual";  // Stores the current tab
-
 function changeStyle(){
   document.getElementById("see").onclick = function(evt){
     document.getElementById("pSee").style     = "display:visible; transition:all 0.3s;";
