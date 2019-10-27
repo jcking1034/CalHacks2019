@@ -1,5 +1,5 @@
 /* Code to get search bar text */
-var uSearch;  //uSearch now has the search value
+var uSearch;  // uSearch now has the search value
 
 window.onload = function(){
   changeStyle();
@@ -14,33 +14,33 @@ var curTab = "visual";  // Stores the current tab
 
 function changeStyle(){
   document.getElementById("see").onclick = function(evt){
-    document.getElementById("pSee").style = "display:visible; transition:all 0.3s;";
-    document.getElementById("pHear").style = "display:none; transition:all 0.3s;";
-    document.getElementById("pPhys").style = "display:none; transition:all 0.3s;";
-    document.getElementById("see").style = "background:#F7E8F3; transition:all 0.3s;";
-    document.getElementById("hear").style = "background:#111C49; transition:all 0.3s;";
+    document.getElementById("pSee").style     = "display:visible; transition:all 0.3s;";
+    document.getElementById("pHear").style    = "display:none; transition:all 0.3s;";
+    document.getElementById("pPhys").style    = "display:none; transition:all 0.3s;";
+    document.getElementById("see").style      = "background:#F7E8F3; transition:all 0.3s;";
+    document.getElementById("hear").style     = "background:#111C49; transition:all 0.3s;";
     document.getElementById("physical").style = "background:#111C49; transition:all 0.3s;";
     curTab = "visual";
     get_list("http://127.0.0.1:5000/", uSearch, curTab);
   }
 
   document.getElementById("hear").onclick = function(evt){
-    document.getElementById("pSee").style = "display:none; transition:all 0.3s;";
-    document.getElementById("pHear").style = "display:visible; transition:all 0.3s;";
-    document.getElementById("pPhys").style = "display:none; transition:all 0.3s;";
-    document.getElementById("see").style = "background:#111C49; transition:all 0.3s;";
-    document.getElementById("hear").style = "background:#F7E8F3; transition:all 0.3s;";
+    document.getElementById("pSee").style     = "display:none; transition:all 0.3s;";
+    document.getElementById("pHear").style    = "display:visible; transition:all 0.3s;";
+    document.getElementById("pPhys").style    = "display:none; transition:all 0.3s;";
+    document.getElementById("see").style      = "background:#111C49; transition:all 0.3s;";
+    document.getElementById("hear").style     = "background:#F7E8F3; transition:all 0.3s;";
     document.getElementById("physical").style = "background:#111C49; transition:all 0.3s;";
     curTab = "auditory";
     get_list("http://127.0.0.1:5000/", uSearch, curTab);
   }
 
   document.getElementById("physical").onclick = function(evt){
-    document.getElementById("pSee").style = "display:none; transition:all 0.3s;";
-    document.getElementById("pHear").style = "display:none; transition:all 0.3s;";
-    document.getElementById("pPhys").style = "display:visible;; transition:all 0.3s;";
-    document.getElementById("see").style = "background:#111C49; transition:all 0.3s;";
-    document.getElementById("hear").style = "background:#111C49; transition:all 0.3s;";
+    document.getElementById("pSee").style     = "display:none; transition:all 0.3s;";
+    document.getElementById("pHear").style    = "display:none; transition:all 0.3s;";
+    document.getElementById("pPhys").style    = "display:visible;; transition:all 0.3s;";
+    document.getElementById("see").style      = "background:#111C49; transition:all 0.3s;";
+    document.getElementById("hear").style     = "background:#111C49; transition:all 0.3s;";
     document.getElementById("physical").style = "background:#F7E8F3; transition:all 0.3s;";
     curTab = "physical";
     get_list("http://127.0.0.1:5000/", uSearch, curTab);
@@ -74,7 +74,6 @@ function display(items) {
 
   // Add the goods
   for (let i = 0; i < names.length; i++) {
-
     var to_add = document.createElement("div");
 
     var a = document.createElement('a');
